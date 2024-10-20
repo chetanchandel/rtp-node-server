@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A Node.js server for handling RTP protocols in real-time communication",
   "main": "app.js",
+  "engines": {
+    "node": ">=14.0.0" 
+  },
   "scripts": {
     "prod":"cross-env NODE_ENV=prod node app.js",
     "dev": "cross-env NODE_ENV=dev node app.js",
