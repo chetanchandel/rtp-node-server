@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const userRoutes = require('./routes/userRoutes');
+const { port } = require('./config/config');
 const mongoURI = config.mongouri || 'mongodb://127.0.0.1:27017/mydatabase';
 
 const PORT = process.env.PORT || 4000;
@@ -27,6 +28,6 @@ mongoose.connect(mongoURI)
         console.error('Error connecting to MongoDB', err);
     });
 
-app.listen(config.port, () => {
+app.listen(port, () => {
   console.log(`Server running on ${config.port} ${config.hostname}`);
 });
