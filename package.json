@@ -4,6 +4,7 @@
   "description": "A Node.js server for handling RTP protocols in real-time communication",
   "main": "app.js",
   "scripts": {
+    "prod":"cross-env NODE_ENV=prod node app.js",
     "dev": "cross-env NODE_ENV=dev node app.js",
     "test": "cross-env NODE_ENV=testing node app.js",
     "qa": "cross-env NODE_ENV=qa node app.js"
