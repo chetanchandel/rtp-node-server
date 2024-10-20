@@ -29,5 +29,5 @@ mongoose.connect(mongoURI)
     });
 
 app.listen(config.port, config.hostname, () => {
-  console.log(`Server running on http://localhost:${config.port} ${config.hostname}`);
+  console.log(`Server running on ${config.port} ${config.hostname}`);
 });
