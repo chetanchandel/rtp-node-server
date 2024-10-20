@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5001
 
 # Command to run the app
-CMD ["sh", "-c", "npm run prod"]
+CMD ["npm", "run","prod"]
